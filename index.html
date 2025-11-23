@@ -39,13 +39,13 @@
     <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
     <script src="https://unpkg.com/leaflet-search@3.0.0/dist/leaflet-search.src.js"></script>
     
-    <script src="sites_final.js?t=1763902673"></script>
+    <script src="sites_final.js?t=1763903111"></script>
 
     <script>
         var map = L.map('map', { preferCanvas: true }).setView([-35.2809, 149.1300], 11);
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
-            attribution: '&copy; OpenStreetMap'
+            attribution: '&copy; OpenStreetMap and the Australian Communications and Media Authority (ACMA)'
         }).addTo(map);
 
         var markers = L.markerClusterGroup({ chunkedLoading: true });
