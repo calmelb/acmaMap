@@ -105,9 +105,15 @@ def generate_html():
             
         fmt_format = item.get('format', 'N/A').upper()
 
+        status = item.get('state', 'Unknown')
+        status_badge = "bg-success" if "Current" in status else "bg-secondary"
+
         html_content += f"""
                 <tr>
-                    <td>{name}</td>
+                    <td>
+                        {name} <br>
+                        <span class="badge {status_badge}" style="font-size:0.7em">{status}</span>
+                    </td>
                     <td>{date}</td>
                     <td data-order="{raw_size if raw_size else 0}">{fmt_size}</td>
                     <td><span class="badge bg-light text-dark border">{fmt_format}</span></td>
