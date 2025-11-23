@@ -4,7 +4,7 @@ import datetime
 
 # Configuration
 INPUT_FILE = 'package_show.json'
-OUTPUT_FILE = 'carriers'
+OUTPUT_FILE = 'carriers.html'
 
 def convert_size(size_bytes):
     """Converts raw bytes to human readable format (KB, MB, etc)."""
