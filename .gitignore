@@ -1,3 +1,5 @@
 gitignored/*
 *.py
 *.csv
+
+.DS_Store

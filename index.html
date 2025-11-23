@@ -39,7 +39,7 @@
     <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
     <script src="https://unpkg.com/leaflet-search@3.0.0/dist/leaflet-search.src.js"></script>
     
-    <script src="sites_final.js?t=1763901787"></script>
+    <script src="sites_final.js?t=1763902673"></script>
 
     <script>
         var map = L.map('map', { preferCanvas: true }).setView([-35.2809, 149.1300], 11);
@@ -58,7 +58,6 @@
                 onEachFeature: function (feature, layer) {
                     var p = feature.properties;
                     var carriers = p.c.split('; ').map(c => `<li>${c}</li>`).join('');
-                    // Format frequencies nicely
                     var freqs = p.f ? p.f.split(', ').map(f => `<span class="freq-tag">${f}</span>`).join('') : 'None listed';
 
                     var content = `
@@ -103,7 +102,6 @@
                         <option value="Vodafone/TPG">Vodafone/TPG Only</option>
                         <option value="NBN">NBN Only</option>
                         <option value="Broadcasters">TV & Radio</option>
-                        <option value="Unknown/Other">Unknown / Other</option>
                     </select>
                 `;
                 L.DomEvent.disableClickPropagation(div);
