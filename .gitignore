@@ -1,5 +1,6 @@
 gitignored/*
 # *.py
+*.cs
 *.csv
-
+package_show.json
 .DS_Store
